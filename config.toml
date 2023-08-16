@@ -5,13 +5,14 @@ summaryLength   = 25
 
 theme         = "comics"
 languageCode  = "en-us"
-title         = "IT doesn't need to be Boring"
+title         = "REPETITIVE IT"
+
 
 disqusShortname = ""
 
 [params]
-    description     = "The Ultimate Tech Blogging Theme"
-    contactEmail    = "your-email@domain.com"
+    description     = "IT Doesn't need to be Boring"
+    contactEmail    = "contact@repetitive.it"
     footer          = ""
  #   # Da Rivedere
  #   googleSearch    = "oVmz7GIIYmKXRPkhnXeUW7icPW09nDy6oOf5sCsoNkw"
