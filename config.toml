@@ -1,0 +1,77 @@
+baseURL = "https://dev.repetitive.it/"
+canonifyURLs=true
+pluralizeListTitles = false
+summaryLength   = 25
+
+theme         = "comics"
+languageCode  = "en-us"
+title         = "IT doesn't need to be Boring"
+
+disqusShortname = ""
+
+[params]
+    description     = "The Ultimate Tech Blogging Theme"
+    contactEmail    = "your-email@domain.com"
+    footer          = ""
+ #   # Da Rivedere
+ #   googleSearch    = "oVmz7GIIYmKXRPkhnXeUW7icPW09nDy6oOf5sCsoNkw"
+ #   googleAnalytics = "G-3LZ6Z896DF"      # Google Analytics v4
+ #   adsense         = "ca-pub-5667421736788953"
+    math            = false   # best to enable this in the front matter of a page
+    mermaid         = false   # best to enable this in the front matter of a page
+
+    # Social Media Params
+    youtube    = "https://www.youtube.com/channel/UCRP9JXIW808hdq_LwojfSRw"
+    github     = "https://github.com/0dataloss"
+
+
+# Configure the site menu here
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        weight = 2
+            [[menu.main]]
+                parent = "blog"
+                name = "Posts"
+                url = "/posts/"
+                weight = 1
+            [[menu.main]]
+                parent = "blog"
+                name = "Sections"
+                url = "/sections/"
+                weight = 2
+            [[menu.main]]
+                parent = "blog"
+                name = "divider"
+                weight = 3
+            [[menu.main]]
+                parent = "blog"
+                name = "Tags"
+                url = "/tags/"
+                weight = 4
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 3
+    [[menu.main]]
+        name = "Contact"
+        url = "/contact/"
+        weight = 4
+
+[markup.goldmark.parser.attribute]
+    block = true
+
+# Don't touch this
+[markup.goldmark.renderer]
+    unsafe = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.91.2"
