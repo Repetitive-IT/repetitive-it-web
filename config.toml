@@ -1,5 +1,5 @@
 #baseURL = "http://localhost:1313"
-baseURL = "http://repetitive.it"
+baseURL = "https://dev.repetitive.it"
 disableKinds = ["section", "taxonomy", "term", "RSS"]
 defaultContentLanguage = "it"
 theme = "hugo-scroll"
