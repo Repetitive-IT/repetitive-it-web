@@ -1,77 +1,50 @@
-baseURL = "https://dev.repetitive.it/"
-canonifyURLs=true
-pluralizeListTitles = false
-summaryLength   = 25
+baseURL = "http://localhost:1313"
+# baseURL = "http://repetitive.it"
+disableKinds = ["section", "taxonomy", "term", "RSS"]
+defaultContentLanguage = "it"
+theme = "hugo-scroll"
+# The browser tab name
+title = "Repetitive.it"
 
-theme         = "comics"
-languageCode  = "en-us"
-title         = "IT doesn't need to be Boring"
+# In order to add version information in the page's footer set to true.
+#enableGitInfo = true
 
-disqusShortname = ""
-
+# Theme-specific variables `.Site.Params.myParamName`
 [params]
-    description     = "The Ultimate Tech Blogging Theme"
-    contactEmail    = "your-email@domain.com"
-    footer          = ""
- #   # Da Rivedere
- #   googleSearch    = "oVmz7GIIYmKXRPkhnXeUW7icPW09nDy6oOf5sCsoNkw"
- #   googleAnalytics = "G-3LZ6Z896DF"      # Google Analytics v4
- #   adsense         = "ca-pub-5667421736788953"
-    math            = false   # best to enable this in the front matter of a page
-    mermaid         = false   # best to enable this in the front matter of a page
 
-    # Social Media Params
-    youtube    = "https://www.youtube.com/channel/UCRP9JXIW808hdq_LwojfSRw"
-    github     = "https://github.com/0dataloss"
+    # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
+    favicon = "images/favicon-32x32.png"
 
+    # These "images" are used for the structured data templates. This will show up, when
+    # services like Twitter or Slack want to generate a preview of a link to your site.
+    # See https://gohugo.io/templates/internal#twitter-cards and https://gohugo.io/templates/internal#open-graph.
+    # NOT the actual header background image, go to _index.md instead
+    images = ["images/cover-image.jpg"]
 
-# Configure the site menu here
-[menu]
-    [[menu.main]]
-        name = "Home"
-        url = "/"
-        weight = 1
+    # When set true, it creates a visual guard (partially transparent rounded box), preventing non-ideal background images from interfering with title/description headings
+    # Ideal images are homogenous around the centre and contrasting to the text.
+    # see CSS classes: .title-and-description-guard, .blog-title, .blog-description
+    # see _index.md header_headline and header_subheadline
+    title_guard = false
 
-    [[menu.main]]
-        identifier = "blog"
-        name = "Blog"
-        weight = 2
-            [[menu.main]]
-                parent = "blog"
-                name = "Posts"
-                url = "/posts/"
-                weight = 1
-            [[menu.main]]
-                parent = "blog"
-                name = "Sections"
-                url = "/sections/"
-                weight = 2
-            [[menu.main]]
-                parent = "blog"
-                name = "divider"
-                weight = 3
-            [[menu.main]]
-                parent = "blog"
-                name = "Tags"
-                url = "/tags/"
-                weight = 4
-    [[menu.main]]
-        name = "About"
-        url = "/about/"
-        weight = 3
-    [[menu.main]]
-        name = "Contact"
-        url = "/contact/"
-        weight = 4
+    # Another "title" :-). This one is used as the site_name on the Hugo's internal
+    # opengraph structured data template.
+    # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+    title = "Repetitive IT"
 
-[markup.goldmark.parser.attribute]
-    block = true
+    # The "description" of your website. This is used in the meta data of your generated html.
+    description = "Corsi di Computer, Cloud, DevOps, SRE, IaaS, PaaS, *aaS"
 
-# Don't touch this
-[markup.goldmark.renderer]
-    unsafe = true
+    # A "copyright"-line to be added at the bottom of the page.
+    # Hint: Plain HTML is supported in here as well. So you may e.g. add a link to your legal imprint-page.
+    copyright = "© Repetitive.it 2023"
 
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.91.2"
+    # This theme will, by default, inject a design-by-line at the bottom of the page.
+    # You can turn it off, but we would really appreciate if you don’t :-)
+    hidedesignbyline = false
+
+    # The sections of the home page alternate styling. Mark invert as true to swap the styling of the sections
+    invertSectionColors = false
+    
+    [params.meta]
+        keywords = "riparazione computer, campi bisenzio, corsi computer, consulenze datacenter, cloud"
