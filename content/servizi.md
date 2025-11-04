@@ -1,7 +1,7 @@
 ---
 title: "Cosa Troverai A Repetitive.IT"
 date: 2023-10-10T18:20:14+02:00
-draft: false
+draft: true
 ---
 
 - Gestione ed ottimizzazione costi su Cloud
