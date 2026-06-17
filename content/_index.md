@@ -10,5 +10,5 @@ header_logo: "images/bot.png"
 #
 # Headers are safeHTML, you can use HTML tags such as b,i,u,br
 header_headline: "Repetitive IT"
-header_subheadline: "<h4><b>Supporto su Computer e Server</b><br><b>Corsi di Formazione<br> Consulenza installazione Reti e Server </b> "
+header_subheadline: "<h4><b>Supporto su Computer e Server</b><br><b>Corsi di Formazione<br> Consulenza installazione Reti e Server </b>"
 ---
