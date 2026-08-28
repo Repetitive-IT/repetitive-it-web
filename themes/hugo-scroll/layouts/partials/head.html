@@ -1,3 +1,5 @@
+---
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -36,5 +38,16 @@
 <!-- A partial to be overwritten by the user.
      Simply place a custom_head.html into
      your local /layouts/partials-directory -->
-{{- partial "custom_head.html" . -}}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-89SM90T692"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-89SM90T692');
+</script>     
+
+
 </head>
